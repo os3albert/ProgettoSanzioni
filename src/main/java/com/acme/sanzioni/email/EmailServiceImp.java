@@ -1,6 +1,8 @@
 package com.acme.sanzioni.email;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @author albert
@@ -9,6 +11,8 @@ import lombok.Data;
  *
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public abstract class EmailServiceImp implements EmailService {
 	
 	private String Name;
