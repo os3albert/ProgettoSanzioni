@@ -1,3 +1,3 @@
 # ProgettoSanzioni
 
-![Tux, the Linux mascot](/ProgettoSanzioni//PaintProgettoSanzioni.png)
+![Tux, the Linux mascot](/PaintProgettoSanzioni.png)
