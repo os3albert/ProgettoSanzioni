@@ -25,19 +25,22 @@ public class EmailServiceSender extends EmailServiceImp{
 	 */
 	public EmailServiceSender(String Name, String usernamePerInvio, String password) {
 		super(Name, usernamePerInvio, password);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void send(Email email) {
+		
+		System.out.println(email.getDestinatario() + email.getMessaggio() + email.getMittente() + email.getOggetto());
 
 		
 	}
 
 	@Override
 	public void send(List<Email> emails) {
-		// TODO Auto-generated method stub
-		
+
+		for (Email email : emails) {
+			System.out.println(email.getDestinatario() + email.getMessaggio() + email.getMittente() + email.getOggetto());
+		}
 	}
 	
 	
