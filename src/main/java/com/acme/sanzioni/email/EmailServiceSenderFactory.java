@@ -10,10 +10,13 @@ public class EmailServiceSenderFactory {
 		EmailServiceSender emailServiceSender = null;
 		
 		if (tipo.equals(UFFICIO_POLIZIA)) {
-			emailServiceSender = new EmailServiceSender(tipo, "password");
+			emailServiceSender = new EmailServiceSender(tipo, usernamePerInvio, password);
+		} else if (tipo.equals(UFFICIO_PROVINCIALE)) {
+			emailServiceSender = new EmailServiceSender(tipo, usernamePerInvio, password);
 		}
 		
-		return null;
+		return emailServiceSender;
+		
 	}
 
 }
