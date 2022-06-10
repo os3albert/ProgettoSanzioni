@@ -1,5 +1,8 @@
 package com.acme.sanzioni.infrazioni;
 
+import com.acme.sanzioni.persona.Criminale;
+import com.acme.sanzioni.persona.Poliziotto;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +18,6 @@ public abstract class InfrazioneImp implements Infrazione {
 	private double importo;
 
 
-	//Poliziotto;
-	//Criminali;
+	private Poliziotto poliziotto;
+	private Criminale criminale;
 }
