@@ -6,6 +6,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * @author alber
+ *
+ */
 @Data
 @AllArgsConstructor
 public class EmailServiceSender extends EmailServiceImp{
@@ -13,8 +17,10 @@ public class EmailServiceSender extends EmailServiceImp{
 	
 	
 	/**
-	 * @param Name 
-	 * @param usernamePerInvio
+	 * @param Name Nome del email del ufficiio di polizia provinciale ed email del ufficio
+	 * polizia municipale
+	 *  
+	 * @param usernamePerInvio 
 	 * @param password
 	 */
 	public EmailServiceSender(String Name, String usernamePerInvio, String password) {
