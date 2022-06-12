@@ -4,9 +4,11 @@ public class MultaFactory {
 	
 	public final String TIPO_INFRAZIONE = "STRADALE";
 	
-	public static final Multa create(String tipoInfrazione) {
+	public static Multa create(String tipoInfrazione) {
 
-		Multa multa = null;
+		Multa multa = new MultaStradale(); //siccome la classe astratta non si puo istanziare ho creato Multa Stradale
+		
+		return multa;
 		
 	}
 	
